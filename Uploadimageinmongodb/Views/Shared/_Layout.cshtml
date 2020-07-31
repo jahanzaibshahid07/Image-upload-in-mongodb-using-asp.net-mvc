@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="~/Content/StyleSheet1.css">
+    
+    <title>Divor Application</title>
+</head>
+<body>
+
+
+    <nav id="nv" class="navbar navbar-expand-md navbar-dark bg-dark mb-0 sticky-top" style="background-color: #347a94 !important;
+    padding: 15px 100px;">
+        <img src="~/img/logo.jpg" width="80px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto" style="margin:0 30px;">
+                <li class="nav-item active ">
+                    <a class="nav-link" href="@Url.Action("Index","Home")">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active ">
+                    <a class="nav-link" href="@Url.Action("PrivacyPolicy", "Home")">| Privacy Policy </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Dispatch", "Home")">| Dispatch</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("DriverApp", "Home")">| Driver App</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("CustomerApp", "Home")">| Customer App</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("WebBooker", "Home")">| Web Booker</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        @RenderBody()
+    <hr class="featurette-divider">
+    <footer class="container "> <p class="float-right"><a href="#" style=" color: #f7bc1a;">Back to top</a></p><p>© 2019 All rights reserved</p></footer>
+
+</body>
+</html>
